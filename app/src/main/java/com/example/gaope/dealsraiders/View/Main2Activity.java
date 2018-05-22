@@ -48,32 +48,40 @@ public class Main2Activity extends AppCompatActivity {
         Log.d("aaaaaaa", "onCreate: ");
         initContent();
         initTab();
-//        ImageView imageView=(ImageView)findViewById(R.id.tab_image);
-//        LinearLayout.LayoutParams imParams = (LinearLayout.LayoutParams) imageView.getLayoutParams();
-//        Log.d(TAG,"wid:"+imParams.width);
-//        Log.d(TAG,"hei:"+imParams.height);
 
-//        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-//            @Override
-//            public void onTabSelected(TabLayout.Tab tab) {
-//                ImageView imageView = (ImageView)findViewById(R.id.tab_image);
-//                LinearLayout.LayoutParams imParams = (LinearLayout.LayoutParams) imageView.getLayoutParams();
-//                imParams.width = 80;
-//                imParams.height = 80;
-//                imageView.setLayoutParams(imParams);
-//                imageView.setImageResource(R.drawable.select_home);
-//            }
-//
-//            @Override
-//            public void onTabUnselected(TabLayout.Tab tab) {
-//
-//            }
-//
-//            @Override
-//            public void onTabReselected(TabLayout.Tab tab) {
-//
-//            }
-//        });
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                View view = tab.getCustomView();
+                ImageView image = view.findViewById(R.id.tab_image);
+
+                Log.d(TAG,"vw:"+image.getWidth());
+                Log.d(TAG,"vh:"+image.getHeight());
+                LinearLayout.LayoutParams imParams = (LinearLayout.LayoutParams) image.getLayoutParams();
+                imParams.width = 80;
+                imParams.height = 80;
+                image.setLayoutParams(imParams);
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                View view = tab.getCustomView();
+                ImageView image = view.findViewById(R.id.tab_image);
+
+                Log.d(TAG,"vw:"+image.getWidth());
+                Log.d(TAG,"vh:"+image.getHeight());
+                LinearLayout.LayoutParams imParams = (LinearLayout.LayoutParams) image.getLayoutParams();
+                imParams.width = 60;
+                imParams.height = 60;
+                image.setLayoutParams(imParams);
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
 
 
