@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.gaope.dealsraiders.View.SearchResultActivity">
+    android:layout_height="match_parent" >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#fffafafa">
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back_search"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/back_search"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="130dp"
+            android:text="搜索"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tab_search_result"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#ffffff"-->
+        <!--app:tabIndicatorColor="#f4ea2a"-->
+        <!--app:tabIndicatorHeight="3dp"-->
+        <!--app:tabTextColor="#000000"-->
+        <!--app:tabSelectedTextColor="#000000"-->
+        <!--app:tabMode="fixed"-->
+        <!--&gt;-->
+    <!--</android.support.design.widget.TabLayout>-->
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:xTabIndicatorColor="#f4ea2a"
+        app:xTabIndicatorHeight="3dp"
+        app:xTabTextColor="#000000"
+        app:xTabSelectedTextColor="#f4ea2a"
+        app:xTabMode="fixed"
+        app:xTabIndicatorWidth="15dp"
+        >
+
+    </com.androidkun.xtablayout.XTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
