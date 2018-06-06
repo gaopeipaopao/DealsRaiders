@@ -7,6 +7,7 @@ import com.bumptech.glide.Glide;
 import com.youth.banner.loader.ImageLoader;
 
 /**
+ * 在主页的首部轮播图上面用Glide来加载图片
  * Created by gaope on 2018/5/29.
  */
 
