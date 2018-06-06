@@ -1,65 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <LinearLayout
-        android:layout_gravity="top"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
         <LinearLayout
-            android:id="@+id/layout_user"
+            android:layout_gravity="top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/searchphoto"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
-            <TextView
-                android:id="@+id/search_text"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="搜索攻略/游记" />
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/searchphoto"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+                <TextView
+                    android:id="@+id/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="搜索攻略/游记"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="320dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffdee2df" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <com.youth.banner.Banner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home_banner_photo"
+                app:title_textcolor="#ffffff"
+                app:title_textsize="15dp"
+                app:delay_time="5000">
+
+            </com.youth.banner.Banner>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4.00"
+                android:layout_height="21dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/hot_home_yellow"
+                    android:id="@+id/im"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="热门旅游记"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignLeft="@+id/im"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|end"
+                    android:text="更多"
+                    android:textColor="#000000" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/moer_home"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/message_home"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        <View
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
 
-            android:layout_width="320dp"
-            android:layout_marginTop="1dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#ffdee2df" />
+            <LinearLayout
+                android:id="@+id/text_image1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+
+                <include layout="@layout/home_imageandtext"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_image2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp">
+
+                <include layout="@layout/home_imageandtext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:id="@+id/text_image3"
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           android:orientation="horizontal"
+           android:layout_margin="10dp">
+
+           <include layout="@layout/home_imageandtext"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text_image4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <include layout="@layout/home_imageandtext"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/text_image5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+
+                <include layout="@layout/home_imageandtext"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_image6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp">
+
+                <include layout="@layout/home_imageandtext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text_image7"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <include layout="@layout/home_imageandtext"/>
+
+        </LinearLayout>
+
+
+
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="240dp">
-
-        <com.youth.banner.Banner
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/home_banner_photo"
-            app:title_textcolor="#ffffff"
-            app:title_textsize="15dp"
-            app:delay_time="5000">
-
-        </com.youth.banner.Banner>
-
-    </FrameLayout>
-
-
-
-
-</LinearLayout>
+</ScrollView>

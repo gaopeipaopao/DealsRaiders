@@ -36,11 +36,7 @@ public class Data {
      */
     public static String TAG_SPACE = "\\[SPACE\\]";
 
-    private String data1;
-    private String data2;
-    private String data3;
-    private String data4;
-    private String data5;
+
 
     /**
      * 来判断是需要哪个data
@@ -55,27 +51,34 @@ public class Data {
         this.data = data;
     }
 
-    public static String getData(){
+    public  String getData(){
         int resId1 = R.drawable.photo5_one;
         int resId2 = R.drawable.photo5_two;
         int resId3 = R.drawable.photo5_three ;
-        int resId4 ;
-        int resId5 ;
-        int resId6 ;
-        int resId7 ;
-        int resId8 ;
-        int resId9 ;
-        int resId10 ;
+
+        //藏族儿女
+        int resId4 = R.drawable.zangzu1 ;
+        int resId5 = R.drawable.zangzu2 ;
+        int resId6 = R.drawable.zangzu3 ;
+
+        //大兴安岭
+        int resId7 = R.drawable.daxingan1;
+        int resId8 = R.drawable.daxingan2;
+        int resId9 = R.drawable.daxingan3 ;
+        int resId10 = R.drawable.daxingan4 ;
         String res1 = String .valueOf(resId1);
         String res2 = String .valueOf(resId2);
         String res3 = String .valueOf(resId3);
-//        String res4 = String .valueOf(resId4);
-//        String res5 = String .valueOf(resId5);
-//        String res6 = String .valueOf(resId6);
-//        String res7 = String .valueOf(resId7);
-//        String res8 = String .valueOf(resId8);
-//        String res9 = String .valueOf(resId9);
-//        String res10 = String .valueOf(resId10);
+        String res4 = String .valueOf(resId4);
+        String res5 = String .valueOf(resId5);
+        String res6 = String .valueOf(resId6);
+        String res7 = String .valueOf(resId7);
+        String res8 = String .valueOf(resId8);
+        String res9 = String .valueOf(resId9);
+        String res10 = String .valueOf(resId10);
+
+
+
         String data1 =
                 "[TITLE]再走老路"
                         + "[SPACE]"+
@@ -105,6 +108,115 @@ public class Data {
                         + "[SPACE]"
                         + "[TEXT]建议穿着运动舒适的鞋，镇上的景区地面是石板路，穿高跟鞋很累。 ";
 
+        String data2 =
+                "[TITLE]藏族儿女们的信仰"
+                        + "[SPACE]"+
+                        "[TEXT]1.拉帮结派，一起包车去 "
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]"+ res4
+                        + "[SPACE]"
+                        + "[TEXT]西藏的话除了拉萨市内的景点，其他地方都比较分散，而且班车很少，一般都需要包车去，青旅的公告栏上一般都贴着这几天内要出发的包车团队，在求捡或求被捡，很多，AA制，可以挑个合适的团队报名。 "
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]" + res5
+                        + "[SPACE]"
+                        + "[TEXT]在拉萨，甜茶是必须喝的，艳遇墙是一直在呆的，酒吧里的青稞酒是要喝的，遇到藏族姐姐阿佳是可以叫的，扎西德勒是要挂嘴边的，这就是拉萨的生活。艳遇墙是拉漂们的聚集地，每天日落到半夜，都有一堆人在这里唠嗑，扯犊子，装纯，等艳遇，也或者等死。里寻找属于自己的一份拉萨情结。  "
+                        + "[SPACE]"
+                        + "[TEXT]2.西藏各个地区的情况 "
+                        + "[SPACE]"
+                        + "[TEXT]⑴那曲地区震撼人心的雪山和动物 "
+                        + "[SPACE]"
+                        + "[TEXT]坐火车走青藏线倒数第二站就是那曲，主要为高山草原景观，畜牧业为主，比较有名的就是赛马节，大概在7，8月份左右举办，藏历是7月中旬，听说会很热闹，有集会和表演之类的，赶上时间去的话应该会很好玩，感受一下藏民骑马时的彪悍、以及粗犷的民风和气氛。 "
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]" + res6
+                        + "[SPACE]"
+                        + "[TEXT]⑵林芝地区充满诗意的西藏小江南 "
+                        + "[SPACE]"
+                        + "[TEXT]被称为西藏的小江南，318川藏线为主要道路，雅鲁藏布大峡谷就在这里，还有神湖巴松措，当然往这里去的也还有徒步墨脱的团队，徒步墨脱的话一定需要有当地的向导带路。重要的是最美的是风景往往都是在路途中，看到美丽的地方不妨让司机停下车，缓解一下坐车的压抑，欣赏下美景。拉萨往林芝的团队一般都是5天左右一个来回。"
+                        + "[SPACE]"
+                        + "[TEXT]⑶山南地区让灵魂在这里洗礼吧"
+                        + "[SPACE]"
+                        + "[TEXT]山南地区是藏民族的的发祥地，有着很多的寺庙，最有名的就是西藏第一座寺庙——桑耶寺。到这里体验藏传佛教的渊博与精髓，你可以不信佛，但是佛教中的有些知识及观点是你必须要懂的。还有一个必去的地方就是西藏最具传奇色彩的湖泊“拉姆拉措”，话说在这个湖边可以看到自己的前世今生以及未来，信不信就自己去看看咯，去这个湖需要在海拔 5000多米左右徒步登山一段距离，所以做好大口喘气的准备吧。";
+        String data3 =
+                "[TITLE]彝族"
+                        + "[SPACE]"+
+                        "[TEXT]凉山拖乌彝族自治州位于四川省西南部，" +
+                        "是西部大开发重点地区——“攀西资源综合开发区”的重要组成部份，" +
+                        "也是全国最大的彝族聚居区。 凉山拖乌彝族自治州首府西昌市素有“月城”" +
+                        "雅称，是世界闻名的航天城，也是中国古代通商要道“南方丝绸之路”的重" +
+                        "要聚散中心。 凉山历史悠久，是一个具有光荣革命传统的地区。凉山资源" +
+                        "富集，是一块蕴含巨大开发潜力与投资价值的“宝地”。 春夏季节是游玩" +
+                        "的最佳季节。螺髻•九十九里是螺髻山景点最为集中的区域，是螺髻山的" +
+                        "核心景区。这里一里一个景，九里一个奇观，共九十九景，故名螺髻" +
+                        "九十九里。螺髻•九十九里主要景点有：世界最大温泉瀑布(2013年" +
+                        "通过世界纪录协会认证）、螺髻第一峰（古人所称的螺髻山）" +
+                        "、螺髻第一海（螺髻山最大的湖泊）、螺髻最后的海子（螺髻" +
+                        "山海拔最高的湖泊、海拔4000米）、全球罕见的彩虹瀑布" +
+                        "（全年彩虹出现次数超过200次）、百瀑谷（成百上千的大小瀑布）、" +
+                        "万亩杜鹃花海（螺髻山最美的索玛花海）……"
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]"+ res1
+                        + "[SPACE]"
+                        + "[TEXT]邛海，古称邛池，属更新世早期断陷湖，至今约180万年。其形状如蜗牛，是四川省第二大淡水湖。秋日天高气爽，落霞孤鹜，秋水天长，使人流连忘返。冬季天净水明，红枫翠柏，倒映湖面。午后起风，海浪奔涌，似白鹅嫱戏于波涛上。"
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]" + res2
+                        + "[SPACE]"
+                        + "[TEXT]邛海不仅景色秀美，还有众多美妙的民间传说，更烘托出它的神秘和美丽，如李膺《盖州记》和《太平御览》等著述中均有不少记载。邛海湖内有40多种鱼类，其中有特有的白鱼、鲤鱼、大虾、螃蟹等，秋末冬初有19种候鸟携家眷来此过冬。邛海四周有月亮湾，观海湾，青龙湾等景区。"
+                        + "[SPACE]"
+                        + "[TEXT]泸沽湖位于云南丽江宁蒗县北部永宁乡和四川省盐源县左侧的万山丛中，泸沽湖大落水村距宁蒗县城有73公里，距丽江古城200公里左右。泸沽湖为川滇两省界湖。为四川云南两省共有，湖岸线四川要比云南的湖岸线长约占2/3。泸沽湖面积50多平方千米，海拔2690米，平均水深45米，最深处达93米，透明度高达11米，最大能见度为12米，湖水清澈蔚蓝，是云南海拔最高的湖泊，也是云南第二深的淡水湖之一。湖中有5个全岛、三个半岛和一个海堤连岛，形态各异，翠绿如玉。";
+        String data4 =
+                "[TITLE]大兴安岭"
+                        + "[SPACE]"+
+                        "[TEXT]关于路线的选择，十一这个长假很多人都在出去，可是去哪就很有" +
+                        "说道了，个人认为想要玩好就要去地广人稀，景色优美的冷门旅行地~！~！" +
+                        "十一金秋时期要看什么，我觉得在北方值得推荐的就是大兴安岭。大兴安" +
+                        "岭横跨在东北平原上，从黑龙江到内蒙古，区域非常的大，时间的关系我" +
+                        "只能选择其中一块来游览。东北的秋天来的是那么早，秋的痕迹从北向南逐" +
+                        "渐过渡，从黑龙江开始，每年的九月中下旬是漠河，满归，加格达奇那边的" +
+                        "最佳观赏期，而到十月时，兴安盟，克什克腾旗就是最佳的观赏期，过了十" +
+                        "月中旬整个大兴安岭基本已经进入冬季的萧条期了，秋叶之静美只能在这短" +
+                        "短不到一个月的时间抓紧观看。"
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]"+ res7
+                        + "[SPACE]"
+                        + "[TEXT]按照我的原计划是把兴安盟和克什克腾旗的景色都走了，由于只" +
+                        "剩我一个司机，为了避免赶路疲劳驾驶，只能割舍掉一个，我选择留下兴安" +
+                        "盟，因为从蘑菇气到阿尔山那条景观公路更加的原生态，风光应该也会更好，" +
+                        "事实证明我的英明选择是多么正确。"
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]" + res8
+                        + "[SPACE]"
+                        + "[TEXT]整个行程走下来大概2500公里，一共六天，因为拍照耽搁时间再加经验不足，" +
+                        "开过两天夜路，但距离都不太远。路况很好，车辆不多，极少会遇见石子路，可" +
+                        "能会遇见羊群牛群阻塞交通，一般车辆都能胜任这条" +
+                        "路线。整条路线几乎没有门票，只有在月亮天池、国门、白狼峰买了门票。"
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]" + res9
+                        + "[SPACE]"
+                        + "[TEXT]行前准备：车辆的检查必不可少，提前了预习了各种可" +
+                        "能出现的问题，整理救援电话，深入了解路况，谨慎驾驶，还各自买" +
+                        "了意外保险~浪出去容易，还得安全的回来。这段路的精华景色区在蘑菇气镇" +
+                        "到阿尔山的蘑阿公路，整条路几乎都是水泥修成的两车道，很平整，两边落叶松" +
+                        "景色绝美，是真正的秋叶之路，个人认为走过蘑阿公路根本不用买门票进阿尔" +
+                        "山森林公园。自驾的快乐不就是自由随性，不被景区所束缚，这条路真的能满足你所有的需要。 "
+                        + "[SPACE]"
+                        + "[DRAWABLE_IMAGE]" + res10
+                ;
+
+        String dataa[] = new String[10];
+        dataa[0] = "再走老路";
+        dataa[1] = data1;
+        dataa[2] = "藏族儿女们的信仰";
+        dataa[3] = data2;
+        dataa[4] = "来自大山深处的故事——彝族";
+        dataa[5] = data3;
+        dataa[6] = "你好 我的名字叫大兴安岭";
+        dataa[7] = data4;
+
+        for (int i = 0;i < dataa.length;i++){
+            if (data.equals(dataa[i])){
+                return dataa[i + 1];
+            }
+        }
 
         return data1;
     }

@@ -24,11 +24,15 @@ public class HomeBannerActivity extends AppCompatActivity {
     private ImageAndTextView imageTextView;
     private String[] datas;
     private Button button;
+    private Data dd;
+    private String data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_banner);
+
+
 
         parseData();
 
@@ -45,7 +49,9 @@ public class HomeBannerActivity extends AppCompatActivity {
     }
 
     private void parseData() {
-        datas = Data.getData().split(Data.TAG_SPACE);
+        data = getIntent().getStringExtra("Text");
+        dd = new Data(data);
+        datas = dd.getData().split(Data.TAG_SPACE);
         Log.d(TAG,":"+datas.length);
     }
 }

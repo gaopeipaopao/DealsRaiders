@@ -1,15 +1,20 @@
 package com.example.gaope.dealsraiders.Fragment;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.gaope.dealsraiders.R;
 import com.example.gaope.dealsraiders.ToolHomeFragmentClass.GlideImageLoader;
 import com.example.gaope.dealsraiders.View.HomeBannerActivity;
@@ -59,6 +64,18 @@ public class HomePageFragment extends Fragment {
     private Banner homeBanner;
 
     /**
+     * 轮播图下面的分为两个的布局
+     */
+    private LinearLayout linearLayout1;
+    private LinearLayout linearLayout2;
+    private LinearLayout linearLayout3;
+    private LinearLayout linearLayout4;
+    private LinearLayout linearLayout5;
+    private LinearLayout linearLayout6;
+    private LinearLayout linearLayout7;
+
+
+    /**
      *
      * @param inflater
      * @param container
@@ -73,6 +90,13 @@ public class HomePageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_fragment,container,false);
         searchText = (TextView)view.findViewById(R.id.search_text);
+        linearLayout1 = (LinearLayout) view.findViewById(R.id.text_image1);
+        linearLayout2 = (LinearLayout) view.findViewById(R.id.text_image2);
+        linearLayout3 = (LinearLayout) view.findViewById(R.id.text_image3);
+        linearLayout4 = (LinearLayout) view.findViewById(R.id.text_image4);
+        linearLayout5 = (LinearLayout) view.findViewById(R.id.text_image5);
+        linearLayout6 = (LinearLayout) view.findViewById(R.id.text_image6);
+        linearLayout7 = (LinearLayout) view.findViewById(R.id.text_image7);
 
         init();
 
@@ -114,5 +138,109 @@ public class HomePageFragment extends Fragment {
             }
         });
         homeBanner.start();
+
+        textAndImage();
+    }
+
+    private void textAndImage() {
+
+        ImageView im1 = linearLayout1.findViewById(R.id.imageView_home);
+        TextView tv1 = linearLayout1.findViewById(R.id.textView_home);
+        tv1.setText("来自大山深处的故事——彝族");
+        im1.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(getContext()).load(R.drawable.image_text_1).into(im1);
+        im1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","来自大山深处的故事——彝族");
+                startActivity(intent);
+            }
+        });
+
+        ImageView im2 = linearLayout2.findViewById(R.id.imageView_home);
+        TextView tv2 = linearLayout2.findViewById(R.id.textView_home);
+        tv2.setText("藏族儿女们的信仰");
+        im2.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(getContext()).load(R.drawable.image_text_home2).into(im2);
+        im2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","藏族儿女们的信仰");
+                startActivity(intent);
+            }
+        });
+
+        ImageView im3 = linearLayout3.findViewById(R.id.imageView_home);
+        TextView tv3 = linearLayout3.findViewById(R.id.textView_home);
+        tv3.setText("你好 我的名字叫大兴安岭");
+        im3.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(getContext()).load(R.drawable.daxingan).into(im3);
+        im3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","你好 我的名字叫大兴安岭");
+                startActivity(intent);
+            }
+        });
+
+        ImageView im4 = linearLayout4.findViewById(R.id.imageView_home);
+        TextView tv4 = linearLayout4.findViewById(R.id.textView_home);
+        tv4.setText("藏族儿女们的信仰");
+        im4.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(getContext()).load(R.drawable.image_text_home2).into(im4);
+        im4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","藏族儿女们的信仰");
+                startActivity(intent);
+            }
+        });
+
+        ImageView im5 = linearLayout1.findViewById(R.id.imageView_home);
+        TextView tv5 = linearLayout1.findViewById(R.id.textView_home);
+        tv5.setText("彝族");
+        im5.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(getContext()).load(R.drawable.image_text_1).into(im5);
+        im5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","彝族");
+                startActivity(intent);
+            }
+        });
+
+        ImageView im6 = linearLayout2.findViewById(R.id.imageView_home);
+        TextView tv6 = linearLayout2.findViewById(R.id.textView_home);
+        tv6.setText("藏族儿女们的信仰");
+        im6.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(getContext()).load(R.drawable.image_text_home2).into(im6);
+        im6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","藏族儿女们的信仰");
+                startActivity(intent);
+            }
+        });
+
+        ImageView im7 = linearLayout1.findViewById(R.id.imageView_home);
+        TextView tv7 = linearLayout1.findViewById(R.id.textView_home);
+        tv7.setText("彝族");
+        im7.setScaleType(ImageView.ScaleType.CENTER);
+        Glide.with(getContext()).load(R.drawable.image_text_1).into(im7);
+        im7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","彝族");
+                startActivity(intent);
+            }
+        });
+
     }
 }
