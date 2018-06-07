@@ -175,7 +175,7 @@ public class HomePageFragment extends Fragment {
         ImageView im3 = linearLayout3.findViewById(R.id.imageView_home);
         TextView tv3 = linearLayout3.findViewById(R.id.textView_home);
         tv3.setText("你好 我的名字叫大兴安岭");
-        im3.setScaleType(ImageView.ScaleType.CENTER);
+        im3.setScaleType(ImageView.ScaleType.CENTER_CROP);
         Glide.with(getContext()).load(R.drawable.daxingan).into(im3);
         im3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -188,56 +188,56 @@ public class HomePageFragment extends Fragment {
 
         ImageView im4 = linearLayout4.findViewById(R.id.imageView_home);
         TextView tv4 = linearLayout4.findViewById(R.id.textView_home);
-        tv4.setText("藏族儿女们的信仰");
-        im4.setScaleType(ImageView.ScaleType.CENTER);
-        Glide.with(getContext()).load(R.drawable.image_text_home2).into(im4);
+        tv4.setText("海边阳光 热浪沙滩 尽享夏日乐趣");
+        im4.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        Glide.with(getContext()).load(R.drawable.hanbian).into(im4);
         im4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), HomeBannerActivity.class);
-                intent.putExtra("Text","藏族儿女们的信仰");
+                intent.putExtra("Text","海边阳光 热浪沙滩 尽享夏日乐趣");
                 startActivity(intent);
             }
         });
 
-        ImageView im5 = linearLayout1.findViewById(R.id.imageView_home);
-        TextView tv5 = linearLayout1.findViewById(R.id.textView_home);
-        tv5.setText("彝族");
+        ImageView im5 = linearLayout5.findViewById(R.id.imageView_home);
+        TextView tv5 = linearLayout5.findViewById(R.id.textView_home);
+        tv5.setText("脚下这大山中的古桥");
         im5.setScaleType(ImageView.ScaleType.CENTER);
-        Glide.with(getContext()).load(R.drawable.image_text_1).into(im5);
+        Glide.with(getContext()).load(R.drawable.daqiao).into(im5);
         im5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), HomeBannerActivity.class);
-                intent.putExtra("Text","彝族");
+                intent.putExtra("Text","脚下这大山中的古桥");
                 startActivity(intent);
             }
         });
 
-        ImageView im6 = linearLayout2.findViewById(R.id.imageView_home);
-        TextView tv6 = linearLayout2.findViewById(R.id.textView_home);
-        tv6.setText("藏族儿女们的信仰");
+        ImageView im6 = linearLayout6.findViewById(R.id.imageView_home);
+        TextView tv6 = linearLayout6.findViewById(R.id.textView_home);
+        tv6.setText("少数民族的习惯");
         im6.setScaleType(ImageView.ScaleType.CENTER);
-        Glide.with(getContext()).load(R.drawable.image_text_home2).into(im6);
+        Glide.with(getContext()).load(R.drawable.minzu).into(im6);
         im6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), HomeBannerActivity.class);
-                intent.putExtra("Text","藏族儿女们的信仰");
+                intent.putExtra("Text","少数民族的习惯");
                 startActivity(intent);
             }
         });
 
-        ImageView im7 = linearLayout1.findViewById(R.id.imageView_home);
-        TextView tv7 = linearLayout1.findViewById(R.id.textView_home);
-        tv7.setText("彝族");
-        im7.setScaleType(ImageView.ScaleType.CENTER);
-        Glide.with(getContext()).load(R.drawable.image_text_1).into(im7);
+        ImageView im7 = linearLayout7.findViewById(R.id.imageView_home);
+        TextView tv7 = linearLayout7.findViewById(R.id.textView_home);
+        tv7.setText("鲜为人知的丛林深处，静谧的那一方净土");
+        im7.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        Glide.with(getContext()).load(R.drawable.jingtu).into(im7);
         im7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), HomeBannerActivity.class);
-                intent.putExtra("Text","彝族");
+                intent.putExtra("Text","鲜为人知的丛林深处，静谧的那一方净土");
                 startActivity(intent);
             }
         });
