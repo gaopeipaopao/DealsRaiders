@@ -10,7 +10,9 @@
         android:layout_height="40dp"
         android:orientation="horizontal"
         android:background="#fffafafa"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="top"
+        android:id="@+id/lin">
 
         <Button
             android:layout_width="20dp"
@@ -30,13 +32,36 @@
 
     </LinearLayout>
 
-    <ListView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/comment_listview">
+        android:layout_height="match_parent">
 
-    </ListView>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_listview">
 
+        </ListView>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:id="@+id/lin2">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/strategy_paint"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/comment_edit"/>
+        </LinearLayout>
+
+    </FrameLayout>
 
 </LinearLayout>
