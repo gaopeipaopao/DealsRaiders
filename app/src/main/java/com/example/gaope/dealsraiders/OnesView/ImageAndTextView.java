@@ -7,6 +7,7 @@ import android.text.TextPaint;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -59,6 +60,9 @@ public class ImageAndTextView extends LinearLayout {
         urlList = new ArrayList<>();
         //initDpToPx();
         init();
+        TextView textView = new TextView(context);
+        textView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,150));
+        addView(textView);
     }
 
     @Override
