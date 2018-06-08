@@ -134,6 +134,7 @@ public class HomePageFragment extends Fragment {
             @Override
             public void OnBannerClick(int position) {
                 Intent intent = new Intent(getContext(), HomeBannerActivity.class);
+                intent.putExtra("Text","再走老路");
                 startActivity(intent);
             }
         });
