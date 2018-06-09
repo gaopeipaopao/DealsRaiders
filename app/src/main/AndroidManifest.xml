@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon_dr"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -20,7 +20,16 @@
         <activity android:name=".View.SearchActivity" />
         <activity android:name=".View.SearchResultActivity" />
         <activity android:name=".View.HomeBannerActivity" />
-        <activity android:name=".View.CommentActivity"></activity>
+        <activity android:name=".View.CommentActivity" />
+        <activity android:name=".View.StrategyPaintActivity" />
+        <activity android:name=".View.MyCollectionActivity" />
+        <activity android:name=".View.MyMessageActivity" />
+        <activity android:name=".View.HotPushActivity" />
+        <activity android:name=".View.HistoryActivity" />
+        <activity android:name=".View.SetActivity" />
+        <activity android:name=".View.AboutUsActivity" />
+        <activity android:name=".View.DengluActivity" />
+        <activity android:name=".View.StartActivity"></activity>
     </application>
 
 </manifest>

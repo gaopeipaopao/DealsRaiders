@@ -14,13 +14,16 @@ import java.util.List;
 public class SearchResultViewPagerAdapter extends FragmentPagerAdapter {
 
     private String[]  titles=new String[]{"攻略","游记"};
+    private String[]  titles1=new String[]{"已发布","草稿"};
 
     private List<Fragment> mFragment=new ArrayList<>();
+    private int one;
 
 
-    public SearchResultViewPagerAdapter(List<Fragment> mfragment, FragmentManager fm) {
+    public SearchResultViewPagerAdapter(int one,List<Fragment> mfragment, FragmentManager fm) {
         super(fm);
         this.mFragment=mfragment;
+        this.one = one;
     }
 
     @Override
@@ -35,6 +38,12 @@ public class SearchResultViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
+        if (one == 0){
+            return titles[position];
+        }
+        if (one == 1){
+            return titles1[position];
+        }
         return titles[position];
     }
 }

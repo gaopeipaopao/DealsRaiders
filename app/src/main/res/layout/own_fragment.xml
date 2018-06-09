@@ -30,7 +30,8 @@
             android:layout_weight="6"
             android:text="我的收藏"
             android:textColor="#000000"
-            android:gravity="center"/>
+            android:gravity="left|center"
+            android:layout_marginLeft="30dp"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -60,7 +61,8 @@
             android:layout_weight="6"
             android:text="消息中心"
             android:textColor="#000000"
-            android:gravity="center"/>
+            android:gravity="left|center"
+            android:layout_marginLeft="30dp"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -85,12 +87,15 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="6"
+            android:gravity="left|center"
+            android:layout_marginLeft="30dp"
             android:text="热门推送"
-            android:textColor="#000000"
-            android:gravity="center"/>
+            android:textColor="#000000" />
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -120,7 +125,8 @@
             android:layout_weight="6"
             android:text="历史浏览"
             android:textColor="#000000"
-            android:gravity="center"/>
+            android:gravity="left|center"
+            android:layout_marginLeft="30dp"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -136,6 +142,36 @@
 
     </LinearLayout>
 
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="#ffffff"-->
+        <!--android:id="@+id/denglu"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="6"-->
+            <!--android:text="登陆"-->
+            <!--android:textColor="#000000"-->
+            <!--android:gravity="center"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+            <!--<Button-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/own_right"-->
+                <!--android:id="@+id/own_denglu"/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -150,7 +186,8 @@
             android:layout_weight="6"
             android:text="设置"
             android:textColor="#000000"
-            android:gravity="center"/>
+            android:gravity="left|center"
+            android:layout_marginLeft="30dp"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -175,12 +212,15 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
             android:layout_weight="6"
+            android:gravity="left|center"
             android:text="关于我们"
-            android:textColor="#000000"
-            android:gravity="center"/>
+            android:textColor="#000000" />
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"

@@ -100,7 +100,7 @@ public class HomePageFragment extends Fragment {
 
         init();
 
-        homeBanner = view.findViewById(R.id.home_banner_photo);
+        homeBanner = (Banner) view.findViewById(R.id.home_banner_photo);
 
         return view;
     }
